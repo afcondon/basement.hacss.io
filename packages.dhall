@@ -5,18 +5,10 @@ let html-parser-halogen =
       , version = "v1.0.0-rc.2"
       }
 
-let generics-rep =
-      { dependencies = [ ] : List Text
-      , repo =
-          "https://github.com/purescript-deprecated/purescript-generics-rep.git"
-      , version = "v6.1.1"
-      }
-
 let overrides = {=}
 
 let additions =
       { html-parser-halogen
-      , generics-rep
       }
 
 let upstream =
@@ -25,14 +17,14 @@ let upstream =
     { dependencies =
       [ "effect"
       , "foreign-object"
-      , "generics-rep"
       , "newtype"
       , "nullable"
       , "profunctor-lenses"
       , "string-parsers"
+      , "js-uri"
       ]
-    , repo = "https://github.com/hacss/core.git"
-    , version = "v4.0.3"
+    , repo = "https://github.com/afcondon/core.git"
+    , version = "0.14.3"
     }
 
 in  upstream // overrides // additions

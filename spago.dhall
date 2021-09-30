@@ -8,6 +8,7 @@
   , "halogen"
   , "html-parser-halogen"
   , "js-timers"
+  , "js-uri"
   , "profunctor-lenses"
   , "psci-support"
   , "refs"
